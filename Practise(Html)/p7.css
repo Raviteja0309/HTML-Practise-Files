@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    border: 10px;
+    padding: 15px;
+}
+header{
+    background-color: blueviolet;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    max-height: 500px;
+}
+.sec3{
+    display: grid;
+    grid-auto-flow: row;
+    max-height: 500px;
+}
+.sec11 li{
+    list-style-type: none;
+    display: inline;
+    border: brown;
+}
+.sec11{
+    max-height: 150px;
+}
+.sex13{
+    max-height: 350px;
+}

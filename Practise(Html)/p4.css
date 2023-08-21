@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    border: 10px black;
+}
+body{
+    width: 70%;
+    border: 5px black;
+    padding: 10px;
+}
+.header{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.body{
+    background-color: beige;
+    color: black;
+    padding-left: 5px;
+}
+.body1{
+    padding-top: 10px;
+}
+.body2{
+    background-color: skyblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.body3{
+    background-color: green;
+    color: white;
+    margin-bottom: 10px;
+}
+.body3:hover{
+    background-color: brown;
+}
+.a:hover{
+    background-position: 300px;
+}
+.fotter{
+    padding-left: 5px;
+    margin-top: 10px;
+}

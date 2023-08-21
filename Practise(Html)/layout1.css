@@ -1,0 +1,79 @@
+*
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #logo-div
+        {
+            width: 100%;
+            min-height:50px;
+            padding-left:2%;
+            background-color: lightgray;
+            line-height: 50px;
+            margin-bottom: 10px ;
+
+        }
+        #Navi-div
+        {
+            width: 100%;
+            min-height: 30px;
+            text-align: center;
+            background-color: lightgray;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        #HB-div
+        {
+            width: 100%;
+            min-height: 70px;
+            text-align: center;
+            line-height: 70px;
+            background-color: lightgray;
+            margin-bottom: 20px;
+        }
+        #main-div
+        {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        #Side-div
+        {
+            width:28%;
+            min-height: 450px;
+            background-color: lightgray;
+            float: left;
+            text-align: center;
+            line-height: 450px;
+            font-size: 70px;
+        }
+        #Body-div
+        {
+            width: 70%;
+            min-height: 450px;
+            background-color: lightgray;
+            float: right;
+            text-align: center;
+            line-height: 450px;
+            font-size: 70px;
+        }
+        #Fotter-div
+        {
+            width: 100%;
+            min-height: 30px;
+            text-align: center;
+            background-color: lightgray;
+            line-height: 30px;
+        }
+        .clearfix::after
+        {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #wrapper-div
+        {
+            width: 70%;
+            margin: auto;
+        }

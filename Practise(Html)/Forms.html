@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Document</title>
+    <script>
+        function validateForm(){
+            let x = document.forms['myForm']['fname'].value;
+            if (x == ''){
+                window.alert('Please enter your first name!!');
+                return false;
+            }
+        } 
+    </script>
+    <h1>DAte</h1>
+    <p id="date"></p>
+    <script>
+        const d = new Date(2023,9,1);
+        document.getElementById('date').innerHTML = d;
+    </script>
+</head>
+<body>
+    <form   name="myForm" action="action_page.php" style="display: block; margin-left: auto; margin-right: auto;" onsubmit="return validateForm()" >
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
