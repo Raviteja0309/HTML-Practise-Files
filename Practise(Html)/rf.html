@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    #error {
+      color: red;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form id="registrationForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required minlength="3"><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required minlength="6"><br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+    <button type="submit">Register</button>
+  </form>
+  <p id="error">Error message goes here.</p>
+
+  <script>
+    const registrationForm = document.getElementById("registrationForm");
+    const errorElement = document.getElementById("error");
+
+    registrationForm.addEventListener("submit", function(event) {
+      const username = registrationForm.username.value;
+      const password = registrationForm.password.value;
+      const confirmPassword = registrationForm.confirmPassword.value;
+
+      if (username.length < 3 || password.length < 6 || password !== confirmPassword) {
+        event.preventDefault();
+        errorElement.textContent = "Invalid input. Please check the form fields.";
+        errorElement.style.display = "block";
+      } else {
+        errorElement.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter Example</title>
+  <style>
+    #counter {
+      font-size: 24px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .red {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="counter" class="blue">0</div>
+  <button id="incrementButton">Increment</button>
+
+  <script>
+    const counter = document.getElementById("counter");
+    const incrementButton = document.getElementById("incrementButton");
+    let count = 0;
+
+    incrementButton.addEventListener("click", function() {
+      count++;
+      counter.textContent = count;
+
+      if (count < 5) {
+        counter.className = "blue";
+      } else if (count >= 5 && count <= 10) {
+        counter.className = "green";
+      } else {
+        counter.className = "red";
+      }
+    });
+  </script>
+</body>
+</html>
